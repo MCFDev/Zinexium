@@ -1,2 +1,4 @@
 # Zinexium
-Rewritten codebase for Zinexium
+idk tbh
+
+h
