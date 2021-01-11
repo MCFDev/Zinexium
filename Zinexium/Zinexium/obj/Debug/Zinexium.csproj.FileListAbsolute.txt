@@ -1,0 +1,10 @@
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\Debug\Zinexium.exe.config
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\Debug\Zinexium.exe
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\Debug\Zinexium.pdb
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.csprojAssemblyReference.cache
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.Form1.resources
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.Properties.Resources.resources
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.csproj.GenerateResource.cache
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.csproj.CoreCompileInputs.cache
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.exe
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\Debug\Zinexium.pdb
