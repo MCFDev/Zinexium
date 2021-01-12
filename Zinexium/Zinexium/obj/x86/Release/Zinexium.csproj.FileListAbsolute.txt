@@ -10,3 +10,4 @@ C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zin
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.Main.resources
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\x86\Release\ScintillaNET.dll
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.csproj.CopyComplete
+C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.Settings.resources
