@@ -1,24 +1,23 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Net;
 using System.Diagnostics;
-using System.Net.Http;
+using System.Drawing;
+using System.Net;
+using System.Windows.Forms;
 
 namespace Zinexium
 {
-    public partial class Main : Form
+    public partial class Zinexium : Form
     {
-      
+
         Point lastPoint;
-        public Main()
+        public Zinexium()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -51,7 +50,7 @@ namespace Zinexium
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created & developed by: morgan#0887 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com \nInspiration for the Script Hub from: https://github.com/PareX2019/JSON-Scripthub", "Credits <3", MessageBoxButtons.OK , MessageBoxIcon.Information);
+            MessageBox.Show("Created & developed by: morgan#0887 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com \nInspiration for the Script Hub from: https://github.com/PareX2019/JSON-Scripthub", "Credits <3", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Button8_Click(object sender, EventArgs e)
@@ -76,7 +75,7 @@ namespace Zinexium
         }
 
         private void Button9_Click(object sender, EventArgs e)
-        { 
+        {
 
             WebClient wc = new WebClient();
             var link = wc.DownloadString("https://pastebin.com/raw/j91p7SQE");
@@ -86,7 +85,8 @@ namespace Zinexium
 
         private void Button10_Click(object sender, EventArgs e)
         {
-
+            ScriptHubs Sc = new ScriptHubs();
+            Sc.Show();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Zinexium
 
         private void Settings_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Settings_MouseDown(object sender, MouseEventArgs e)
@@ -33,7 +33,7 @@ namespace Zinexium
 
         private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -65,12 +65,13 @@ namespace Zinexium
         {
             if (this.checkBox1.Checked == true)
             {
-                
+
                 this.TopMost = true;
             }
             else
             {
-                this.TopMost = false;            }
+                this.TopMost = false;
+            }
         }
     }
 }

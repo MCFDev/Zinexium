@@ -1,7 +1,7 @@
 ﻿
 namespace Zinexium
 {
-    partial class Main
+    partial class Zinexium
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Zinexium
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zinexium));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -94,7 +94,7 @@ namespace Zinexium
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 36);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -157,9 +157,9 @@ namespace Zinexium
             this.scintilla1.CaretLineBackColor = System.Drawing.Color.Gray;
             this.scintilla1.CaretLineVisible = true;
             this.scintilla1.Lexer = ScintillaNET.Lexer.Lua;
-            this.scintilla1.Location = new System.Drawing.Point(46, 43);
+            this.scintilla1.Location = new System.Drawing.Point(46, 32);
             this.scintilla1.Name = "scintilla1";
-            this.scintilla1.Size = new System.Drawing.Size(667, 207);
+            this.scintilla1.Size = new System.Drawing.Size(667, 218);
             this.scintilla1.TabIndex = 2;
             this.scintilla1.Text = "--Hi yes";
             // 
@@ -204,12 +204,13 @@ namespace Zinexium
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
-            // Main
+            // Zinexium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(713, 301);
+            this.Controls.Add(this.scintilla1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -221,10 +222,10 @@ namespace Zinexium
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.scintilla1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main";
-            this.Text = "Main";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Zinexium";
+            this.Text = "Zinexium";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
