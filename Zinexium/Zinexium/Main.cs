@@ -57,11 +57,14 @@ namespace Zinexium
 
         }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         private void scintilla1_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     }
