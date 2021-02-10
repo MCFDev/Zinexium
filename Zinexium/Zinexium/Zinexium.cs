@@ -50,7 +50,7 @@ namespace Zinexium
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created & developed by: morgan#5555 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com \nInspiration for the Script Hub from: https://github.com/PareX2019/JSON-Scripthub", "Credits <3", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Created & developed by: morgan#1092 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com \nInspiration for the Script Hub from: https://github.com/PareX2019/JSON-Scripthub", "Credits <3", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Button8_Click(object sender, EventArgs e)
