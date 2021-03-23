@@ -9,14 +9,8 @@ C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zin
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.pdb
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.Settings.resources
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.ScriptHubs.resources
-C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\x86\Release\ScintillaNET.dll
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.csproj.CopyComplete
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 C:\Users\thonkpt\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.Zinexium.resources
-=======
-=======
->>>>>>> Stashed changes
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\x86\Release\Zinexium.exe.config
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\x86\Release\Zinexium.exe
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\bin\x86\Release\Zinexium.pdb
@@ -28,7 +22,3 @@ C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexi
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.exe
 C:\Users\User\Documents\GitHub\Zinexium\Zinexium\Zinexium\obj\x86\Release\Zinexium.pdb
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
