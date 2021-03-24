@@ -2,13 +2,13 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Net;
-using System.Windows.Media;
 using System.Windows.Forms;
 
 namespace Zinexium
 {
     public partial class Zinexium : Form
     {
+
 
         Point lastPoint;
         public Zinexium()
@@ -18,7 +18,9 @@ namespace Zinexium
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
+            this.checkBox1.Checked = Properties.Settings.Default.TopMost;
+            this.TopMost = Properties.Settings.Default.TopMost;
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -32,10 +34,13 @@ namespace Zinexium
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.Save();
+            //added a bunch the line above around the code just to make sure the user doesn't lose any settings
             Environment.Exit(0);
         }
 
@@ -88,6 +93,29 @@ namespace Zinexium
         {
             ScriptHubs Sc = new ScriptHubs();
             Sc.Show();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.checkBox1.Checked == true)
+            {
+
+                this.TopMost = true;
+                Properties.Settings.Default.TopMost = true;
+
+            }
+            else if (this.checkBox1.Checked == false)
+            {
+                this.TopMost = false;
+                Properties.Settings.Default.TopMost = false;
+
+            }
+            Properties.Settings.Default.Save();
+        }
+
+        private void scintilla1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

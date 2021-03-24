@@ -5,6 +5,7 @@ namespace Zinexium
 {
     static class Program
     {
+        public static bool ColorsChanged = false;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

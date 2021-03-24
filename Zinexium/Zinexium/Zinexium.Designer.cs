@@ -42,6 +42,8 @@ namespace Zinexium
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,15 +158,18 @@ namespace Zinexium
             // 
             // scintilla1
             // 
+            this.scintilla1.AdditionalCaretForeColor = System.Drawing.Color.Black;
             this.scintilla1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.scintilla1.CaretLineBackColor = System.Drawing.Color.Gray;
+            this.scintilla1.CaretLineBackColor = System.Drawing.Color.Black;
             this.scintilla1.CaretLineVisible = true;
+            this.scintilla1.EdgeColor = System.Drawing.Color.Black;
             this.scintilla1.Lexer = ScintillaNET.Lexer.Lua;
             this.scintilla1.Location = new System.Drawing.Point(46, 32);
             this.scintilla1.Name = "scintilla1";
             this.scintilla1.Size = new System.Drawing.Size(667, 218);
             this.scintilla1.TabIndex = 2;
             this.scintilla1.Text = "--Hi yes";
+            this.scintilla1.Click += new System.EventHandler(this.scintilla1_Click);
             // 
             // button8
             // 
@@ -208,12 +213,25 @@ namespace Zinexium
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(633, 270);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(68, 17);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "TopMost";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Zinexium
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(713, 301);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.scintilla1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -235,6 +253,7 @@ namespace Zinexium
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -252,6 +271,8 @@ namespace Zinexium
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

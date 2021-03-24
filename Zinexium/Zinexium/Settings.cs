@@ -7,6 +7,7 @@ namespace Zinexium
     public partial class Settings : Form
     {
         Point lastPoint;
+
         public Settings()
         {
             InitializeComponent();
@@ -14,7 +15,9 @@ namespace Zinexium
 
         private void Settings_Load(object sender, EventArgs e)
         {
-
+            this.checkBox2.Checked = Properties.Settings.Default.AutoAttach;
+            this.TextColorIndicator.BackColor = Properties.Settings.Default.TextBoxColor;
+            this.UIcolorIndicator.BackColor = Properties.Settings.Default.ui_color;
         }
 
         private void Settings_MouseDown(object sender, MouseEventArgs e)
@@ -31,13 +34,12 @@ namespace Zinexium
             }
         }
 
-        private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
+            if (Program.ColorsChanged == true)
+            {
+                MessageBox.Show("It Seems you changed the colors so for them to take effect you have to restart Zinexium", "Settings changed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             this.Close();
         }
 
@@ -46,32 +48,40 @@ namespace Zinexium
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-
+            Properties.Settings.Default.AutoAttach = checkBox2.Checked;
+            Properties.Settings.Default.Save();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            if (this.checkBox1.Checked == true)
-            {
 
-                this.TopMost = true;
-            }
-            else
-            {
-                this.TopMost = false;
-            }
+            colorDialog1.ShowDialog();
+
+            Properties.Settings.Default.ui_color = colorDialog1.Color;
+
+            this.UIcolorIndicator.BackColor = colorDialog1.Color;
+            Program.ColorsChanged = true;
+            Properties.Settings.Default.Save();
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+
+            Properties.Settings.Default.TextBoxColor = colorDialog1.Color;
+
+            this.TextColorIndicator.BackColor = colorDialog1.Color;
+            Program.ColorsChanged = true;
+
+            Properties.Settings.Default.Save();
+        }
+
+        private void TextColorIndicator_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
