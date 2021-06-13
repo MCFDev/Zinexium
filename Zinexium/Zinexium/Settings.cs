@@ -14,7 +14,8 @@ namespace Zinexium
         }
 
         private void Settings_Load(object sender, EventArgs e)
-        {
+        {   //Setting the colors and settings from settings
+            this.BackColor = Properties.Settings.Default.ui_color;
             this.checkBox2.Checked = Properties.Settings.Default.AutoAttach;
             this.TextColorIndicator.BackColor = Properties.Settings.Default.TextBoxColor;
             this.UIcolorIndicator.BackColor = Properties.Settings.Default.ui_color;
@@ -35,7 +36,8 @@ namespace Zinexium
         }
 
         private void Button1_Click(object sender, EventArgs e)
-        {
+        { 
+            
             if (Program.ColorsChanged == true)
             {
                 MessageBox.Show("It Seems you changed the colors so for them to take effect you have to restart Zinexium", "Settings changed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -80,6 +82,11 @@ namespace Zinexium
         }
 
         private void TextColorIndicator_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

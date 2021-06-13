@@ -42,14 +42,12 @@ namespace Zinexium
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.TextColorIndicator = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -111,19 +109,21 @@ namespace Zinexium
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(174, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(171, 32);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(107, 69);
+            this.pictureBox3.Size = new System.Drawing.Size(96, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(187, 60);
+            this.checkBox2.Location = new System.Drawing.Point(185, 83);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(82, 17);
             this.checkBox2.TabIndex = 8;
@@ -135,7 +135,7 @@ namespace Zinexium
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(28, 49);
+            this.button3.Location = new System.Drawing.Point(28, 91);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(59, 37);
             this.button3.TabIndex = 1;
@@ -145,14 +145,14 @@ namespace Zinexium
             // 
             // UIcolorIndicator
             // 
-            this.UIcolorIndicator.Location = new System.Drawing.Point(7, 59);
+            this.UIcolorIndicator.Location = new System.Drawing.Point(7, 101);
             this.UIcolorIndicator.Name = "UIcolorIndicator";
             this.UIcolorIndicator.Size = new System.Drawing.Size(18, 18);
             this.UIcolorIndicator.TabIndex = 9;
             // 
             // TextColorIndicator
             // 
-            this.TextColorIndicator.Location = new System.Drawing.Point(7, 101);
+            this.TextColorIndicator.Location = new System.Drawing.Point(6, 189);
             this.TextColorIndicator.Name = "TextColorIndicator";
             this.TextColorIndicator.Size = new System.Drawing.Size(18, 18);
             this.TextColorIndicator.TabIndex = 11;
@@ -162,7 +162,7 @@ namespace Zinexium
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(28, 92);
+            this.button4.Location = new System.Drawing.Point(28, 182);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(59, 37);
             this.button4.TabIndex = 10;
@@ -170,37 +170,15 @@ namespace Zinexium
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // panel4
+            // pictureBox4
             // 
-            this.panel4.Location = new System.Drawing.Point(7, 144);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(18, 18);
-            this.panel4.TabIndex = 13;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(28, 135);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(59, 37);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(7, 187);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(18, 18);
-            this.panel5.TabIndex = 15;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(28, 178);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(59, 37);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(6, 133);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
             // 
             // Settings
             // 
@@ -208,10 +186,7 @@ namespace Zinexium
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(303, 238);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.TextColorIndicator);
             this.Controls.Add(this.UIcolorIndicator);
             this.Controls.Add(this.button4);
@@ -232,6 +207,7 @@ namespace Zinexium
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,9 +227,6 @@ namespace Zinexium
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Panel TextColorIndicator;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

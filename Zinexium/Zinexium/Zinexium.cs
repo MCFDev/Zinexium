@@ -18,9 +18,14 @@ namespace Zinexium
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            //Setting the colors and settings from settings
+            this.BackColor = Properties.Settings.Default.ui_color;
             this.checkBox1.Checked = Properties.Settings.Default.TopMost;
             this.TopMost = Properties.Settings.Default.TopMost;
+            //button colors so they match
+            this.CloseButton.BackColor = Properties.Settings.Default.ui_color;
+            this.MinButton.BackColor = Properties.Settings.Default.ui_color;
+            
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -40,7 +45,7 @@ namespace Zinexium
         private void Button1_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Save();
-            //added a bunch the line above around the code just to make sure the user doesn't lose any settings
+            //added a bunch of the same the line above around the code just to make sure the user doesn't lose any settings
             Environment.Exit(0);
         }
 
@@ -116,6 +121,33 @@ namespace Zinexium
         private void scintilla1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void scintilla1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                //Put Api Attach here
+            }
+
+            catch {
+                MessageBox.Show("Roblox not Found :/", "bruh!!");        
+               }
         }
     }
 }

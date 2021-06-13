@@ -5,6 +5,7 @@ namespace Zinexium
 {
     static class Program
     {
+        public static bool IsAttachedCD = false;
         public static bool ColorsChanged = false;
         /// <summary>
         /// The main entry point for the application.
@@ -15,6 +16,7 @@ namespace Zinexium
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Zinexium());
+           
         }
     }
 }
