@@ -38,7 +38,9 @@ namespace Zinexium
         private void Button1_Click(object sender, EventArgs e)
         {
 
+
             if (Program.ColorsChanged)
+
             {
                 MessageBox.Show("It Seems you changed the colors so for them to take effect you have to restart Zinexium", "Settings changed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

@@ -19,7 +19,7 @@ namespace Zinexium
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace Zinexium
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Created & developed by: morganinnit#5555 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com", "Credits <3", MessageBoxButtons.OK , MessageBoxIcon.Information);
+            MessageBox.Show("Created & developed by: morganinnit#5555 \nCo-Developed by: ThonkPT#3766 \nIcons from: https://icons8.com", "Credits <3", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button8_Click(object sender, EventArgs e)
