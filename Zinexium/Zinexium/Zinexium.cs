@@ -25,7 +25,7 @@ namespace Zinexium
             //button colors so they match
             this.CloseButton.BackColor = Properties.Settings.Default.ui_color;
             this.MinButton.BackColor = Properties.Settings.Default.ui_color;
-            
+
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -145,9 +145,10 @@ namespace Zinexium
                 //Put Api Attach here
             }
 
-            catch {
-                MessageBox.Show("Roblox not Found :/", "bruh!!");        
-               }
+            catch
+            {
+                MessageBox.Show("Roblox not Found :/", "bruh!!");
+            }
         }
     }
 }
