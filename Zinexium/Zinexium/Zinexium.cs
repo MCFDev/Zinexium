@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Net;
@@ -102,14 +102,14 @@ namespace Zinexium
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.checkBox1.Checked == true)
+            if (this.checkBox1.Checked)
             {
 
                 this.TopMost = true;
                 Properties.Settings.Default.TopMost = true;
 
             }
-            else if (this.checkBox1.Checked == false)
+            else if (!this.checkBox1.Checked)
             {
                 this.TopMost = false;
                 Properties.Settings.Default.TopMost = false;
