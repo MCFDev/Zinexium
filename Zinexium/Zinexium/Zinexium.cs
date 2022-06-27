@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Net;
@@ -25,7 +25,7 @@ namespace Zinexium
             //button colors so they match
             this.CloseButton.BackColor = Properties.Settings.Default.ui_color;
             this.MinButton.BackColor = Properties.Settings.Default.ui_color;
-            
+
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -102,14 +102,14 @@ namespace Zinexium
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.checkBox1.Checked == true)
+            if (this.checkBox1.Checked)
             {
 
                 this.TopMost = true;
                 Properties.Settings.Default.TopMost = true;
 
             }
-            else if (this.checkBox1.Checked == false)
+            else if (!this.checkBox1.Checked)
             {
                 this.TopMost = false;
                 Properties.Settings.Default.TopMost = false;
@@ -145,9 +145,10 @@ namespace Zinexium
                 //Put Api Attach here
             }
 
-            catch {
-                MessageBox.Show("Roblox not Found :/", "bruh!!");        
-               }
+            catch
+            {
+                MessageBox.Show("Roblox not Found :/", "bruh!!");
+            }
         }
     }
 }
